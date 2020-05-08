@@ -7,13 +7,13 @@ use PDOException;
 
 class DBConnection
 {
-    protected $server;
-    protected $username;
-    protected $password;
+    public $server;
+    public $username;
+    public $password;
 
     public function __construct()
     {
-        $this->server = 'mysql:host=localhost,dbname=lesson-21-mvc';
+        $this->server = 'mysql:host=localhost;dbname=lesson-21-mvc';
         $this->username = 'root';
         $this->password = '123456@Abc';
     }

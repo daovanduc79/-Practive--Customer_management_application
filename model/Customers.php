@@ -3,7 +3,7 @@ namespace Model;
 
 class Customers
 {
-    protected $id;
+    public $id;
     public $name;
     public $email;
     public $address;

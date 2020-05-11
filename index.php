@@ -40,6 +40,12 @@ include_once 'controller/CustomerController.php';
             break;
         case 'delete':
             $controller->delete();
+            break;
+        case 'update':
+            $controller->edit();
+            break;
+        default :
+            $controller->index();
     }
     ?>
 

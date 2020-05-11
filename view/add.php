@@ -1,13 +1,16 @@
 <?php
-if (isset($message)) {
-    echo "<p class='alert-info'>$message</p>";
+
+if (isset($_SESSION['error-add'])) {
+    $message = $_SESSION['error-add'];
+    echo "<p class='alert-info'> $message </p>";
+    unset($_SESSION['error-add']);
 }
 ?>
 
 <div class="col-12 col-md-12">
     <div class="row">
         <div class="col-12">
-            <h1>Thêm mới khách hàng</h1>
+            <h1>Add Customer</h1>
         </div>
         <div class="col-12">
             <form method="post">
